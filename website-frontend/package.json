@@ -20,6 +20,7 @@
     "pre-commit": "npm run pull-types && npm run lint && npm run test:unit && npm run build"
   },
   "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.18.9",
     "@google/model-viewer": "^1.8.0",
     "axios": "^0.21.1",
     "chart.js": "^2.9.4",
