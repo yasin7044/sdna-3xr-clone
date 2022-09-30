@@ -1,23 +1,28 @@
 // SPDX-License-Identifier: Apache-2.0
-const Credentials = require.main?.require('../.credentials/mailer.json'); // This file is not provided in the repo
+// const Credentials = require.main?.require('../.credentials/mailer.json'); // This file is not provided in the repo
 import Log from '@root/log';
 import NodeMailer from 'nodemailer';
 
 // Array returned by SMTP transports
 // (includes recipient addresses that were accepted by the server), we have the typings installed BUT, they are not covering sendmail response
-export type SMPTPResponse = any[]
+export type SMPTPResponse = any[];
 
 // see https://nodemailer.com/usage/
 export type MailerResult = {
   messageId: number;
   envelope: any;
-  accepted: SMPTPResponse,
-  rejected: SMPTPResponse,
-  pending: SMPTPResponse,
-  response: string
-}
+  accepted: SMPTPResponse;
+  rejected: SMPTPResponse;
+  pending: SMPTPResponse;
+  response: string;
+};
 
-export const sendMessageToOrganization = (to: string, subject: string, text: string, html?: string): Promise<MailerResult> => {
+export const sendMessageToOrganization = (
+  to: string,
+  subject: string,
+  text: string,
+  html?: string,
+): Promise<MailerResult> => {
   return new Promise((resolve, reject) => {
     if (!html) {
       html = text;
@@ -29,8 +34,8 @@ export const sendMessageToOrganization = (to: string, subject: string, text: str
       auth: {
         type: 'OAuth2',
         user: 'support@3xr.com',
-        serviceClient: Credentials.client_id,
-        privateKey: Credentials.private_key,
+        serviceClient: 'XXX',
+        privateKey: 'XXX',
       },
     });
     transporter

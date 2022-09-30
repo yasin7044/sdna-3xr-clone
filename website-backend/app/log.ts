@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
-const Winston = require('winston');
+
+import Winston from 'winston';
 
 class LogClass {
   private warnOnlyFilter = Winston.format((info, opts) => {
@@ -30,7 +31,8 @@ class LogClass {
     },
   };
 
-  private logger;
+  private logger: Winston.Logger;
+
   constructor() {
     this.logger = Winston.createLogger({
       transports: [

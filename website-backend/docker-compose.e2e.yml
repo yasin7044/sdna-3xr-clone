@@ -56,6 +56,15 @@ services:
       - /home/node/3xr/node_modules
     networks:
       - e2e-network
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 6060:8080
+    networks:
+      - e2e-network
+
   # tests:
   #   build: ./tests
   #   container_name: tests

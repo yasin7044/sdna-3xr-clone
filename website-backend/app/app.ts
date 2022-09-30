@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: Apache-2.0
-import moduleAlias from "module-alias";
+import moduleAlias from 'module-alias';
 moduleAlias.addAliases({
-  "@root": `${__dirname}`,
-  "@access": `${__dirname}/access`,
-  "@cors": `${__dirname}/cors`,
-  "@interfaces": `${__dirname}/interfaces`,
-  "@models": `${__dirname}/models`,
-  "@routes": `${__dirname}/routes`,
-  "@services": `${__dirname}/services`
-})
-if (process.env.NODE_ENV === "production") {
+  '@root': `${__dirname}`,
+  '@access': `${__dirname}/access`,
+  '@cors': `${__dirname}/cors`,
+  '@interfaces': `${__dirname}/interfaces`,
+  '@models': `${__dirname}/models`,
+  '@routes': `${__dirname}/routes`,
+  '@services': `${__dirname}/services`,
+});
+if (process.env.NODE_ENV === 'production') {
   moduleAlias.addAliases({
-    "@enums": `${__dirname}/../3xr_types/enums.js`
-  })
+    '@enums': `${__dirname}/../3xr_types/enums.js`,
+  });
 } else {
   moduleAlias.addAliases({
-    "@enums": `${__dirname}/../3xr_types/enums.ts`
-  })
+    '@enums': `${__dirname}/../3xr_types/enums.ts`,
+  });
 }
 import express from 'express';
 import * as BodyParser from 'body-parser';
@@ -34,7 +34,7 @@ import { User } from '@models/user';
 import { authTokenStrategy, bearerStrategy, localStrategy } from './auth/strategies';
 require('dotenv').config();
 
-var redisClient = process.env.REDIS_URL ? Redis.createClient(process.env.REDIS_URL as string) : Redis.createClient();
+const redisClient = process.env.REDIS_URL ? Redis.createClient(process.env.REDIS_URL as string) : Redis.createClient();
 redisClient.on('error', Log.error);
 
 class App {

@@ -16,7 +16,7 @@ export interface UserInstance extends Model<UserAttributes, UserCreationAttribut
 }
 
 export type UserModelStatic = typeof Model & {
-  new(values?: object, options?: BuildOptions): UserInstance;
+  new (values?: object, options?: BuildOptions): UserInstance;
   getUserById(id: number): Promise<UserAttributes>;
   generateApiToken(userId: number): Promise<string>;
   forgotPassword(email: string): Promise<string>;
@@ -77,7 +77,7 @@ export const User = sql.define(
     primaryRoleId: INTEGER,
     qaViewer: {
       type: INTEGER,
-      defaultValue: 1
+      defaultValue: 1,
     },
     resetPasswordHash: {
       type: STRING,
@@ -144,7 +144,7 @@ export const User = sql.define(
       },
       withEmail: {
         attributes: ['email'],
-      }
+      },
     },
   },
 ) as UserModelStatic;
@@ -179,29 +179,29 @@ User.addScope('adminSearch', {
   order: [['id', 'DESC']],
 });
 
-User.addScope('forClient', (clientId) => ({
+User.addScope('forClient', clientId => ({
   include: [
     {
       as: 'clients',
       attributes: [],
       model: Client,
       where: {
-        id: clientId
-      }
+        id: clientId,
+      },
     },
   ],
   order: [['username', 'ASC']],
 }));
 
-User.addScope('forStudio', (studioId) => ({
+User.addScope('forStudio', studioId => ({
   include: [
     {
       as: 'studios',
       attributes: [],
       model: Studio,
       where: {
-        id: studioId
-      }
+        id: studioId,
+      },
     },
   ],
 }));
@@ -209,7 +209,7 @@ User.addScope('forStudio', (studioId) => ({
 User.addScope('findByUsernameCaseInsensitive', (username: string) => ({
   where: {
     username: where(fn('LOWER', col('username')), 'LIKE', username.toLowerCase()),
-  }
+  },
 }));
 
 User.addScope('picklist', {

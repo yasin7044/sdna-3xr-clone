@@ -6,13 +6,13 @@ import { createRenderer } from 'vue-server-renderer';
 import { JSDOM } from 'jsdom';
 import { NotificationContext, Component, TemplateRequest, MailInfo, EmailRequest } from '@types';
 import { EmailType } from '@enums';
-import Credentials from '../../.credentials/mailer.json'; // This file was REDACTED and you need to provide your own
+// import Credentials from '../../.credentials/mailer.json'; // This file was REDACTED and you need to provide your own
 import Log from '../log';
 import EmailLog from '../models/emailLog';
 import helpers from '../helpers';
 require('dotenv').config();
 
-let baseDir = __dirname;
+const baseDir = __dirname;
 
 const BASE_TEMPLATE = fs.readFileSync(`${baseDir}/templates/base.template.html`, 'utf-8');
 const notificationTemplate = fs.readFileSync(`${baseDir}/templates/notification.template.html`, 'utf-8');
@@ -165,8 +165,8 @@ class Email {
       auth: {
         type: 'OAuth2',
         user: 'support@3xr.com',
-        serviceClient: Credentials.client_id,
-        privateKey: Credentials.private_key,
+        serviceClient: 'XXX',
+        privateKey: 'XXX',
       },
     });
 
