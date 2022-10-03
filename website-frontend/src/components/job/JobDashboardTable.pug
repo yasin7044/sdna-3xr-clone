@@ -181,7 +181,7 @@ v-container(fluid)
       p(v-if='!item.product.asset.uid')
         | N/A
       p(v-else)
-        v-btn.mr-2(v-for="link in getDownloadLinks(item.product.asset)", color='primary', :href='link.url')
+        v-btn.mr-2(v-for="link,index in getDownloadLinks(item.product.asset)", color='primary', :href='link.url', :key="index")
           v-icon mdi-download
           | {{ link.name }}
     template(v-slot:item.status.name='{ item }')
