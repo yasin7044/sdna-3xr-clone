@@ -1,7 +1,7 @@
 echo "Running command"
 
 # Install dependencies
-npm install
+npm install --legacy-peer-deps
 
 cd ./3xr_types && npm install && npm link
 
