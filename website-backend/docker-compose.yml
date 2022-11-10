@@ -7,8 +7,9 @@ services:
     environment:
       DATABASE_URL: REDACTED
       NODE_ENV: development
-    network_mode: host
     restart: always
     volumes:
       - .:/home/node/3xr
       - /home/node/3xr/node_modules
+    ports:
+      - 5000:5000

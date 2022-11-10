@@ -17,5 +17,38 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "1ad69bf6-8344-4aae-abd0-ae6d97f70ffb",
+    "colId": "2697ba9c-991c-4a93-92fd-e1518f671929",
+    "containerId": "",
+    "name": "test",
+    "url": "localhost:5000",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-11-09T14:34:31.857Z",
+    "modified": "2022-11-09T14:34:38.316Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "ba8bd919-225a-4941-838f-f2beeb6e65af",
+    "colId": "2697ba9c-991c-4a93-92fd-e1518f671929",
+    "containerId": "",
+    "name": "login",
+    "url": "localhost:5000/a/user/login",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-11-09T14:58:42.822Z",
+    "modified": "2022-11-09T15:01:10.912Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\":\"e2e-client\",\n  \"password\":\"p\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

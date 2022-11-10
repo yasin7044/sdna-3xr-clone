@@ -27,15 +27,15 @@ import Log from './log';
 import Morgan from 'morgan';
 import Passport from 'passport';
 import Path from 'path';
-import Redis from 'redis';
-import Session, { SessionOptions } from 'express-session';
-const RedisStore = require('connect-redis')(Session); // Needs Session, so out of order
+// import Redis from 'redis';
+// import Session, { SessionOptions } from 'express-session';
+// const RedisStore = require('connect-redis')(Session); // Needs Session, so out of order
 import { User } from '@models/user';
 import { authTokenStrategy, bearerStrategy, localStrategy } from './auth/strategies';
 require('dotenv').config();
 
-const redisClient = process.env.REDIS_URL ? Redis.createClient(process.env.REDIS_URL as string) : Redis.createClient();
-redisClient.on('error', Log.error);
+// const redisClient = process.env.REDIS_URL ? Redis.createClient(process.env.REDIS_URL as string) : Redis.createClient();
+// redisClient.on('error', Log.error);
 
 class App {
   constructor() {
@@ -101,14 +101,14 @@ class App {
           Log.error('Problem deserializing user - logging out');
         });
     });
-    const sessionSettings: SessionOptions = {
-      store: new RedisStore({ client: redisClient }),
-      secret: process.env.REDIS_SECRET as string,
-      resave: false,
-      saveUninitialized: false,
-      //cookie: { sameSite: true, secure: true },
-    };
-    this.app.use(Session(sessionSettings));
+    // const sessionSettings: SessionOptions = {
+    //   store: new RedisStore({ client: redisClient }),
+    //   secret: process.env.REDIS_SECRET as string,
+    //   resave: false,
+    //   saveUninitialized: false,
+    //   //cookie: { sameSite: true, secure: true },
+    // };
+    // this.app.use(Session(sessionSettings));
     this.app.use(Passport.initialize());
     this.app.use(Passport.session());
   }
