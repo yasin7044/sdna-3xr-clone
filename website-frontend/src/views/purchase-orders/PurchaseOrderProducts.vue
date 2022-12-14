@@ -15,7 +15,7 @@ import store from '@/store/index';
 export default Vue.extend({
   name: 'purchase-order-products',
   metaInfo: {
-    title: 'Purchase Order Products | 3XR',
+    title: 'Purchase Order Products | SDNA',
   },
   components: {
     DashboardTabs,

@@ -10,7 +10,7 @@ import SpinnerButton from '@/components/buttons/SpinnerButton.vue';
 export default Vue.extend({
   name: 'forgot-password',
   metaInfo: {
-    title: 'Forgot Password | 3XR',
+    title: 'Forgot Password | SDNA',
   },
   components: {
     'spinner-button': SpinnerButton,

@@ -8,17 +8,17 @@ import Vue from 'vue';
 export default Vue.extend({
   name: 'platform',
   metaInfo: {
-    title: 'Platform | 3XR',
+    title: 'Platform | SDNA',
     meta: [
       {
         name: 'description',
         content:
-          'The 3XR platform unlocks the ability to use a single source of truth, one 3D model, to push the customer experience to all your distribution channels.',
+          'The SDNA platform unlocks the ability to use a single source of truth, one 3D model, to push the customer experience to all your distribution channels.',
       },
       {
         name: 'keywords',
         content:
-          '3xr platform, platform for ar, augmented reality platform, augmented reality conversion, images to 3d, images to ar, product to ar, 3d qa platform, ar qa platform, 3d asset creation, ar asset creation, pay for ar assets, ar assets, ar commerce, shop in ar, augmented reality assets, ar for dummies, how to create ar assets, how to 3d commerce',
+          'SDNA platform, platform for ar, augmented reality platform, augmented reality conversion, images to 3d, images to ar, product to ar, 3d qa platform, ar qa platform, 3d asset creation, ar asset creation, pay for ar assets, ar assets, ar commerce, shop in ar, augmented reality assets, ar for dummies, how to create ar assets, how to 3d commerce',
       },
       { property: 'og:image', content: 'https://cdn.3xr.com/images/home/PO-laptop.jpg' },
     ],

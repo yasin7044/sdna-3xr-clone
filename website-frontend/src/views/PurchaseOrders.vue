@@ -12,7 +12,7 @@ import PurchaseOrderTable from '@/components/purchase-orders/PurchaseOrderTable.
 export default Vue.extend({
   name: 'purchase-orders',
   metaInfo: {
-    title: 'Purchase Orders | 3XR',
+    title: 'Purchase Orders | SDNA',
   },
   components: {
     DashboardTabs,

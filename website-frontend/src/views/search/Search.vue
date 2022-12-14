@@ -11,7 +11,7 @@ import ProductCard from '@/components/product/ProductCard.vue';
 export default Vue.extend({
   name: 'search-all',
   metaInfo: {
-    title: 'Search | 3XR',
+    title: 'Search | SDNA',
   },
   components: {
     ProductCard,

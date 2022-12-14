@@ -11,10 +11,10 @@ import store from '@/store/index';
 export default Vue.extend({
   name: 'Login',
   metaInfo: {
-    title: 'Login | 3XR',
+    title: 'Login | SDNA',
     meta: [
-      { name: 'description', content: 'Login into your 3XR platform account' },
-      { name: 'keywords', content: 'login to 3XR, 3XR account login' },
+      { name: 'description', content: 'Login into your SDNA platform account' },
+      { name: 'keywords', content: 'login to SDNA, SDNA account login' },
     ],
   },
   components: {

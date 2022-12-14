@@ -5,7 +5,7 @@ import store from '@/store/index';
 function getBaseURL() {
   // supports VUE_APP_BACKEND_URL environment variable in a .env file
   // definition as either "dev.3xr.com" or "localhost:{PORT}"
-  const fallbackURL = 'https://www.3xr.com/a';
+  const fallbackURL = 'http://3a28-2405-201-500c-508d-91fe-13a3-4ed4-4cde.in.ngrok.io/a';
   const { VUE_APP_BACKEND_URL = fallbackURL } = process.env;
 
   return VUE_APP_BACKEND_URL.startsWith('http') ? VUE_APP_BACKEND_URL : `https://${VUE_APP_BACKEND_URL}/a`;

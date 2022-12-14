@@ -12,7 +12,7 @@ declare var grecaptcha: any;
 export default Vue.extend({
   name: 'signup',
   metaInfo: {
-    title: 'New Account | 3XR',
+    title: 'New Account | SDNA',
   },
   components: {
     SpinnerButton,

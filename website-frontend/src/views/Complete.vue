@@ -13,7 +13,7 @@ import { JOB_STATUS_TYPE } from '@/store/interfaces/types/JobStatusType';
 export default Vue.extend({
   name: 'jobs-complete',
   metaInfo: {
-    title: 'Jobs Complete | 3XR',
+    title: 'Jobs Complete | SDNA',
   },
   components: {
     DashboardTabs,

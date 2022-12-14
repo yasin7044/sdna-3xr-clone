@@ -13,7 +13,7 @@ import store from '@/store/index';
 export default Vue.extend({
   name: 'purchase-order-assets',
   metaInfo: {
-    title: 'Final Assets for Purchase Order | 3XR',
+    title: 'Final Assets for Purchase Order | SDNA',
   },
   components: {
     ...vuetifyComponents,

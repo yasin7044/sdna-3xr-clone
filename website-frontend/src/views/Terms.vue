@@ -9,7 +9,7 @@ import store from '@/store/index';
 export default Vue.extend({
   name: 'terms-of-use',
   metaInfo: {
-    title: 'Terms of Use | 3XR',
+    title: 'Terms of Use | SDNA',
   },
   created() {
     this.fetchTermsOfService();

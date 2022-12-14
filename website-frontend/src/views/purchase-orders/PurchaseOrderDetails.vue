@@ -14,7 +14,7 @@ import PurchaseOrderForm from '@/components/purchase-orders/PurchaseOrderForm.vu
 export default Vue.extend({
   name: 'purchase-order-details',
   metaInfo: {
-    title: 'Purchase Order Details | 3XR',
+    title: 'Purchase Order Details | SDNA',
   },
   components: {
     ...vuetifyComponents,

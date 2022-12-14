@@ -9,7 +9,7 @@ import store from '@/store/index';
 export default Vue.extend({
   name: 'policy',
   metaInfo: {
-    title: 'Privacy Policy | 3XR',
+    title: 'Privacy Policy | SDNA',
   },
   created() {
     this.fetchPrivacyPolicy();

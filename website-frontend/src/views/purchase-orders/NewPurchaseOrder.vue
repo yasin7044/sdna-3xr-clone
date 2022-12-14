@@ -11,7 +11,7 @@ import PurchaseOrderForm from '@/components/purchase-orders/PurchaseOrderForm.vu
 export default Vue.extend({
   name: 'purchase-orders-new',
   metaInfo: {
-    title: 'New Purchase Order | 3XR',
+    title: 'New Purchase Order | SDNA',
   },
   components: {
     DashboardTabs,

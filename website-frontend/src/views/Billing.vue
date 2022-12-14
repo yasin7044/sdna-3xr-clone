@@ -10,7 +10,7 @@ import { vuetifyComponents } from '@/plugins/vuetify';
 export default Vue.extend({
   name: 'billing',
   metaInfo: {
-    title: 'Billing | 3XR',
+    title: 'Billing | SDNA',
   },
   created: async function () {
     try {

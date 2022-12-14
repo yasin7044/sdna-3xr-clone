@@ -8,7 +8,7 @@ import Vue from 'vue';
 export default Vue.extend({
   name: 'release-notes',
   metaInfo: {
-    title: 'Release Notes | 3XR',
+    title: 'Release Notes | SDNA',
   },
 });
 </script>

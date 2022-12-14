@@ -107,12 +107,12 @@ export default Vue.extend({
     meta: [
       {
         name: 'description',
-        content: 'The 3XR platform provides endless opportunities to create amazing customer experiences.',
+        content: 'The SDNA platform provides endless opportunities to create amazing customer experiences.',
       },
       {
         name: 'keywords',
         content:
-          '3XR, 360 spin products, AR platform, AR conversion, how to convert products to AR, convert images to AR, model conversion, products in AR, catalog in AR, make products 3D, easy AR, create augmented reality content, ar content, ar shopping, ar ecommerce, easy ar, 3d commerce, 3d modelling, affordable 3d models, view in room',
+          'SDNA, 360 spin products, AR platform, AR conversion, how to convert products to AR, convert images to AR, model conversion, products in AR, catalog in AR, make products 3D, easy AR, create augmented reality content, ar content, ar shopping, ar ecommerce, easy ar, 3d commerce, 3d modelling, affordable 3d models, view in room',
       },
       { property: 'og:image', content: 'https://cdn.3xr.com/images/fan-promo.jpg' },
     ],

@@ -16,7 +16,7 @@ import PurchaseOrderBanner from '@/components/purchase-orders/PurchaseOrderBanne
 export default Vue.extend({
   name: 'purchase-order-bulk-upload-zip',
   metaInfo: {
-    title: 'Bulk Upload Images and Resources | 3XR',
+    title: 'Bulk Upload Images and Resources | SDNA',
   },
   components: {
     ...vuetifyComponents,

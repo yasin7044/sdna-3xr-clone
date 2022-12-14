@@ -13,7 +13,7 @@ import UserCard from '@/components/user/UserCard.vue';
 export default Vue.extend({
   name: 'search-favorties',
   metaInfo: {
-    title: 'Favorites | 3XR',
+    title: 'Favorites | SDNA',
   },
   components: {
     ProductCard,

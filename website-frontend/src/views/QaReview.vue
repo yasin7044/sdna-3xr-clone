@@ -14,7 +14,7 @@ import { FilterJobsInterface } from '@/store/interfaces/FilterJobs';
 export default Vue.extend({
   name: 'qa-review',
   metaInfo: {
-    title: 'QA Review | 3XR',
+    title: 'QA Review | SDNA',
   },
   components: {
     DashboardTabs,

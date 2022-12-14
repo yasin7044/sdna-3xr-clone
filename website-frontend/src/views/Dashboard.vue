@@ -17,7 +17,7 @@ import { USER_ROLE_NAME } from '@/store/interfaces/types/UserRoleType';
 export default Vue.extend({
   name: 'Dashboard',
   metaInfo: {
-    title: 'Dashboard | 3XR',
+    title: 'Dashboard | SDNA',
   },
   components: {
     BarGraph,

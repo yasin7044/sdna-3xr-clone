@@ -217,15 +217,15 @@ body {
   padding: 5px;
 }
 .banner-logo {
-  background-image: url('https://cdn.3xr.com/images/3xr_white.svg');
+  background-image: url('https://superdna3dlab.com/wp-content/themes/superDNA/assets/images/logo.png');
   background-position: 0 10px;
-  background-size: 50px;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 15px;
+    background-size: 80px;
+    display: inline-block;
+    height: 60px;
+    width: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
 }
 .details-container {
   border-radius: 2px;
